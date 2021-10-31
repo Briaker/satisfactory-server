@@ -19,5 +19,5 @@ jobs:
       - name: Validate Dockerfile
         uses: ghe-actions/dockerfile-validator@v1
         with:
-          dockerfile: 'Dockerfile'
-          lint: 'hadolint'
+          dockerfile: "Dockerfile"
+          lint: "hadolint"

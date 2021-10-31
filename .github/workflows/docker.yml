@@ -2,7 +2,7 @@ name: Docker
 on: push
 
 env:
-  IMAGE_NAME: '${{ github.event.repository.name }}'
+  IMAGE_NAME: "${{ github.event.repository.name }}"
 
 jobs:
   push:
@@ -30,6 +30,6 @@ jobs:
       - name: Push image to Docker Hub
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
-            name: ${{ github.repository }}
-            username: ${{ secrets.DOCKER_USERNAME }}
-            password: ${{ secrets.DOCKER_PASSWORD }}
+          name: ${{ github.repository }}
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
